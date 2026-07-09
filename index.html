@@ -434,16 +434,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--muted);
-    font-size: 1rem;
-    transition: border-color 0.3s, color 0.3s, transform 0.3s, background 0.3s;
+    transition: border-color 0.3s, transform 0.3s, background 0.3s;
+    flex-shrink: 0;
+  }
+  .card-arrow svg {
+    width: 14px;
+    height: 14px;
+    stroke: var(--muted);
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.3s;
   }
   .project-card:hover .card-arrow {
     border-color: var(--accent);
-    color: white;
     background: var(--accent);
     transform: rotate(45deg);
   }
+  .project-card:hover .card-arrow svg { stroke: #fff; }
 
   /* ── ABOUT ── */
   #about {
@@ -853,15 +862,15 @@
   </div>
   <div class="hero-stats">
     <div>
-      <div class="stat-num">08+</div>
+      <div class="stat-num">02+</div>
       <div class="stat-label">Years of<br>Experience</div>
     </div>
     <div>
-      <div class="stat-num">140+</div>
+      <div class="stat-num">14+</div>
       <div class="stat-label">Projects<br>Delivered</div>
     </div>
     <div>
-      <div class="stat-num">60+</div>
+      <div class="stat-num">6+</div>
       <div class="stat-label">Happy<br>Clients</div>
     </div>
   </div>
@@ -907,49 +916,49 @@
     <div class="project-card large reveal" style="transition-delay:0.05s">
       <div class="card-img">
         <div class="card-bg card-bg-1"></div>
-        <div class="card-visual">AR</div>
+        <div class="card-visual">PO</div>
       </div>
-      <div class="card-arrow">↗</div>
+      <a href="https://drive.google.com/file/d/17djEL8ma-CGTwYPr7G6z6MmAoEIUKgjK/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="card-arrow"><svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="12" x2="12" y2="2"/><polyline points="5,2 12,2 12,9"/></svg></a>
       <div class="card-overlay">
-        <div class="card-tag">Brand Identity</div>
-        <div class="card-title">Arcane Studio — Visual Identity</div>
-        <div class="card-desc">Full rebrand for a boutique creative agency</div>
+        <div class="card-tag">Site Decor</div>
+        <div class="card-title">Platinum Oakwoods — Site Decor</div>
+        <div class="card-desc">Site decor for Platinum Oakwoods by Platinum Group</div>
       </div>
     </div>
     <div class="project-card small reveal" style="transition-delay:0.15s">
       <div class="card-img">
         <div class="card-bg card-bg-2"></div>
-        <div class="card-visual">GN</div>
+        <div class="card-visual">MS</div>
       </div>
-      <div class="card-arrow">↗</div>
+      <a href="https://drive.google.com/file/d/1Lo2ss0q2slUWhB5JrMLDpavzJqr3Aipb/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="card-arrow"><svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="12" x2="12" y2="2"/><polyline points="5,2 12,2 12,9"/></svg></a>
       <div class="card-overlay">
-        <div class="card-tag">Packaging</div>
-        <div class="card-title">Greenova — Packaging System</div>
-        <div class="card-desc">Sustainable cosmetics packaging</div>
+        <div class="card-tag">Logo Design</div>
+        <div class="card-title">MS Collection — Logo Design</div>
+        <div class="card-desc">Logo Design for MS Collection</div>
       </div>
     </div>
     <div class="project-card med reveal" style="transition-delay:0.05s">
       <div class="card-img">
         <div class="card-bg card-bg-3"></div>
-        <div class="card-visual">SL</div>
+        <div class="card-visual">SM</div>
       </div>
-      <div class="card-arrow">↗</div>
+      <a href="https://drive.google.com/drive/folders/1Dc9PI8GFd8Ti9AMW9uFlLi7EdM4VS3JR" target="_blank" rel="noopener noreferrer" class="card-arrow"><svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="12" x2="12" y2="2"/><polyline points="5,2 12,2 12,9"/></svg></a>
       <div class="card-overlay">
-        <div class="card-tag">Editorial</div>
-        <div class="card-title">Soleil Magazine — Art Direction</div>
-        <div class="card-desc">Annual editorial direction & layout</div>
+        <div class="card-tag">Social Media</div>
+        <div class="card-title">Social Media Posts</div>
+        <div class="card-desc">Social Media Posts</div>
       </div>
     </div>
     <div class="project-card med reveal" style="transition-delay:0.15s">
       <div class="card-img">
         <div class="card-bg card-bg-4"></div>
-        <div class="card-visual">VX</div>
+        <div class="card-visual">MS</div>
       </div>
-      <div class="card-arrow">↗</div>
+      <a href="https://dranze.github.io/MS-Collection-/" target="_blank" rel="noopener noreferrer" class="card-arrow"><svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="12" x2="12" y2="2"/><polyline points="5,2 12,2 12,9"/></svg></a>
       <div class="card-overlay">
-        <div class="card-tag">UI Design</div>
-        <div class="card-title">Vortex App — Digital Design</div>
-        <div class="card-desc">Dashboard & mobile interface design</div>
+        <div class="card-tag">Website Design</div>
+        <div class="card-title">MS Collection — Web Design</div>
+        <div class="card-desc">Website design for MS Collection</div>
       </div>
     </div>
   </div>
@@ -962,7 +971,7 @@
       <div class="about-img-placeholder">OD</div>
     </div>
     <div class="about-accent-box">
-      <div class="accent-box-num">8+</div>
+      <div class="accent-box-num">2+</div>
       <div class="accent-box-label">Years Design<br>Experience</div>
     </div>
   </div>
